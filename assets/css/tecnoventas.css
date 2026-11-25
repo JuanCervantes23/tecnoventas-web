@@ -1,0 +1,169 @@
+:root {
+    --tv-primary: #1D4ED8;
+    --tv-primary-dark: #1E3A8A;
+    --tv-dark: #0F172A;
+    --tv-bg: #F4F6F9;
+    --tv-card: #FFFFFF;
+    --tv-border: #E2E8F0;
+    --tv-text: #1E293B;
+    --tv-muted: #64748B;
+    --tv-accent: #EF4444;
+}
+
+body {
+    background-color: var(--tv-bg);
+    color: var(--tv-text);
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+}
+
+/* Barra superior informativa estilo tienda tech */
+.tv-topbar {
+    background-color: var(--tv-dark);
+    color: #E2E8F0;
+    font-size: 0.8rem;
+    padding: 6px 0;
+}
+
+/* Header principal */
+.tv-header {
+    background-color: #FFFFFF;
+    border-bottom: 1px solid var(--tv-border);
+}
+
+.tv-brand {
+    font-weight: 800;
+    font-size: 1.35rem;
+    letter-spacing: -0.5px;
+    color: var(--tv-dark);
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.tv-brand-icon {
+    background: var(--tv-dark);
+    color: #FFFFFF;
+    width: 36px;
+    height: 36px;
+    border-radius: 10px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 3px solid var(--tv-primary);
+}
+
+.tv-search-group .form-control {
+    border-radius: 999px 0 0 999px;
+    background-color: #F8FAFC;
+    border: 1.5px solid var(--tv-border);
+    padding-left: 18px;
+}
+
+.tv-search-group .form-control:focus {
+    box-shadow: none;
+    border-color: var(--tv-primary);
+    background-color: #FFFFFF;
+}
+
+.tv-search-group .btn {
+    border-radius: 0 999px 999px 0;
+    background-color: var(--tv-primary);
+    color: #FFFFFF;
+    padding: 0 20px;
+}
+
+/* Barra de navegación dinámica (4 roles) */
+.tv-navbar {
+    background-color: var(--tv-primary);
+}
+
+.tv-navbar.nav-admin {
+    background-color: var(--tv-dark);
+}
+
+.tv-navbar.nav-empleado {
+    background-color: #0F766E;
+}
+
+.tv-navbar .nav-link {
+    color: rgba(255, 255, 255, 0.92) !important;
+    font-weight: 500;
+    font-size: 0.92rem;
+    padding: 10px 14px !important;
+    border-radius: 8px;
+    transition: background 0.15s ease;
+}
+
+.tv-navbar .nav-link:hover,
+.tv-navbar .nav-link.active {
+    background-color: rgba(255, 255, 255, 0.16);
+    color: #FFFFFF !important;
+}
+
+/* Tarjetas de producto limpias */
+.tv-product-card {
+    background: var(--tv-card);
+    border: 1px solid var(--tv-border);
+    border-radius: 16px;
+    transition: transform 0.18s ease, box-shadow 0.18s ease;
+    height: 100%;
+    overflow: hidden;
+}
+
+.tv-product-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 24px rgba(15, 23, 42, 0.08);
+}
+
+.tv-product-img-wrap {
+    background: #F8FAFC;
+    height: 190px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+    position: relative;
+}
+
+.tv-product-img-wrap img {
+    max-height: 155px;
+    max-width: 100%;
+    object-fit: contain;
+}
+
+.tv-discount-badge {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    background: var(--tv-accent);
+    color: #FFFFFF;
+    font-size: 0.75rem;
+    font-weight: 700;
+    padding: 3px 9px;
+    border-radius: 999px;
+}
+
+/* Footer */
+.tv-footer {
+    background-color: var(--tv-dark);
+    color: #CBD5E1;
+    font-size: 0.9rem;
+    margin-top: 48px;
+}
+
+.tv-footer a {
+    color: #94A3B8;
+    text-decoration: none;
+}
+
+.tv-footer a:hover {
+    color: #FFFFFF;
+}
